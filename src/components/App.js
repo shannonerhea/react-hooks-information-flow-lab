@@ -11,10 +11,10 @@ function App() {
   function onDarkModeClick() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
-
+// had a typo on 17 for 20 mins lol Header wasnt capped!
   return (
     <div className={"App " + (isDarkMode ? "dark" : "light")}>
-      <header isDarkMode={isDarkMode} onDarkModeClick={onDarkModeClick} />
+      <Header isDarkMode={isDarkMode} onDarkModeClick={onDarkModeClick} />
       <ShoppingList items={item} />
     </div>
   );
